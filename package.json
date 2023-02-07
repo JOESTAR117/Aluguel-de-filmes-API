@@ -1,0 +1,30 @@
+{
+  "name": "api-rest-prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOESTAR117/API-REST-Prisma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JOESTAR117/API-REST-Prisma/issues"
+  },
+  "homepage": "https://github.com/JOESTAR117/API-REST-Prisma#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
