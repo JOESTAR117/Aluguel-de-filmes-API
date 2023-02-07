@@ -1,10 +1,13 @@
 {
   "name": "api-rest-prisma",
   "version": "1.0.0",
-  "description": "",
+  "description": "API Rest com prisma orm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "start": "yarn build && node dist/server.js",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",
