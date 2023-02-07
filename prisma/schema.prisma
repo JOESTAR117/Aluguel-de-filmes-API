@@ -38,4 +38,5 @@ model MovieRent {
   movieId String
 
   @@id([userId, movieId])
+  @@map("movie_rent")
 }
