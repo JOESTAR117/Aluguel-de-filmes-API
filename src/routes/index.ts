@@ -1,8 +1,10 @@
 import { Router } from 'express'
-import { userRoutes } from './user.router'
+import { userRoutes } from './user.routes'
+import { movieRoutes } from './movie.routes'
 
 const routes = Router()
 
-routes.use('/register', userRoutes)
+routes.use('/user', userRoutes)
+routes.use('/movies', movieRoutes)
 
 export { routes }
