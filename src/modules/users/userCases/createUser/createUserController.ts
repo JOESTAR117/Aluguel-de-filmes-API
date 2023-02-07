@@ -1,15 +1,14 @@
-import { Request, Response } from "express";
-import { CreateUserUseCase } from "./createUserUseCase";
+import { Request, Response } from 'express'
+import { CreateUserUseCase } from './createUserUseCase'
 
 export class CreateUserController {
-    async handle(req:Request, res:Response){
-        const {name,email} = req.body
+    async handle(req: Request, res: Response) {
+        const { name, email } = req.body
 
         const createUserUseCases = new CreateUserUseCase()
 
-        const result = await createUserUseCases.execute({name, email})
+        const result = await createUserUseCases.execute({ name, email })
 
-        return res.status(201).json({message: `User created successfully: ${result}`})
-
+        return res.status(201).json(result)
     }
 }

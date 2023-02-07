@@ -1,5 +1,7 @@
 import { User } from '@prisma/client'
-import { prisma } from '@src/prisma/client'
+import { AppError } from '../../../../errors/AppError'
+
+import { prisma } from '../../../../prisma/client'
 import { CreateUserDTO } from '../../dtos/createUserDTO'
 
 export class CreateUserUseCase {
@@ -11,7 +13,7 @@ export class CreateUserUseCase {
         })
 
         if (userAlreadyExists) {
-            //
+            throw new AppError('User already exists!')
         }
 
         const user = await prisma.user.create({
