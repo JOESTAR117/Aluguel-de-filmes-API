@@ -1,7 +1,7 @@
 import { Movie } from '@prisma/client'
 import { AppError } from '../../../../errors/AppError'
 import { prisma } from '../../../../prisma/client'
-import { CreateMovieDTO } from '../../dtos/CreateMovieDTO'
+import { CreateMovieDTO } from '../../dto/CreateMovieDTO'
 
 export class CreateMovieUseCase {
     async execute({
