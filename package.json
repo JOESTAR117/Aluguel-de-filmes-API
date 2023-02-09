@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/JOESTAR117/API-REST-Prisma#readme",
   "dependencies": {
-    "@prisma/client": "^4.9.0",
+    "@prisma/client": "^4.10.0",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "prisma": "^4.9.0"
+    "prisma": "^4.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
